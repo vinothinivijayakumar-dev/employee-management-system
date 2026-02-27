@@ -59,6 +59,8 @@ const EmployeeForm = ({ onAddEmployee, editEmployee }) => {
       <button type="submit">
         {editEmployee ? 'Update Employee' : 'Add Employee'}
       </button>
+
+      <div className="emp-form-divider"></div>
     </form>
   );
 };

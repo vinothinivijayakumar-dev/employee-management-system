@@ -9,7 +9,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f1f5f9;
-  margin: 0;
 }
 
 .page {
@@ -76,7 +75,7 @@ body {
 
 /* Main container */
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 900px;
   margin: 40px auto;
   padding: 30px;
@@ -390,8 +389,8 @@ mark {
 }
 
 .view-card {
-  width: 30%;
-  margin-top: 20px;
+  width: 40%;
+  margin: 20px auto;
   padding: 10px;
   background: #ffffff;
   border-radius: 10px;
@@ -707,10 +706,11 @@ input:focus {
   margin-top: 10px;
   padding: 6px 14px;
   color: black;
-} 
+}
 
 .View-DepartmentCard {
   width: 50%;
+  margin: 20px auto;
   margin-top: 20px;
   padding: 10px;
   background: #ffffff;
@@ -769,4 +769,282 @@ input:focus {
   padding: 2px 5px;
   border-radius: 4px;
   font-weight: 500;
+}
+
+/* TABLET RESPONSIVE (768px) */
+@media (max-width: 768px) {
+
+  /* Employee Management Section */
+
+  .module-switch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .module-switch button {
+    width: 85%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .form-section form {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .form-section form input {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .form-section form button {
+    width: 50%;
+    max-width: 220px;
+    margin-top: 20px;
+  }
+
+  .emp-form-divider {
+    width: 100%;
+    height: 1px;
+    border-bottom: 2px solid #d1d5db;
+    margin-top: 20px;
+  }
+
+  .list-top-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-wrapper {
+    width: auto;
+  }
+
+  .search-input {
+    width: 140px;
+    max-width: 160px;
+  }
+
+  .view-card {
+    width: 50%;
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 16px;
+    margin-top: 40px;
+    align-items: center;
+  }
+
+  .view-row {
+    grid-template-columns: 110px 1fr;
+    gap: 4px;
+  }
+
+  .view-row span {
+    font-size: 14px;
+  }
+
+  .view-row p {
+    word-break: break-word;
+    font-size: 14px;
+  }
+
+  .close-view {
+    margin-top: 25px;
+  }
+
+  /* Department Management Section */
+
+  .department-form h3 {
+    margin-top: auto;
+    text-align: center;
+    font-size: 20px;
+    width: 60%;
+  }
+
+  .department-form {
+    align-items: center;
+    gap: 18px;
+  }
+
+  .department-form input,
+  .department-form textarea {
+    width: 90%;
+  }
+
+  .department-form textarea {
+    height: 60px;
+    resize: none;
+  }
+
+  .department-form button {
+    width: 40%;
+    max-width: 220px;
+    margin-top: 15px;
+  }
+
+  .View-DepartmentCard {
+    width: 50%;
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 16px;
+    margin-top: 40px;
+    align-items: center;
+  }
+
+}
+
+/* MOBILE RESPONSIVE (600px) */
+@media (max-width: 600px) {
+
+  /* Employee Management Section */
+
+  .module-switch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .module-switch button {
+    width: 85%;
+    max-width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .form-section form {
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .form-section form input {
+    width: 90%;
+  }
+
+  .form-section form button {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 200px;
+  }
+
+  .list-top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .list-top-bar h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .search-wrapper {
+    width: auto;
+  }
+
+  .search-input {
+    width: 140px;
+    max-width: 160px;
+  }
+
+  .emp-form-divider {
+    width: 100%;
+    height: 1px;
+    border-bottom: 2px solid #d1d5db;
+    margin-top: 20px;
+  }
+
+  .view-card {
+    width: 50%;
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 16px;
+    margin-top: 40px;
+    align-items: center;
+  }
+
+  .view-row {
+    grid-template-columns: 110px 1fr;
+    gap: 4px;
+  }
+
+  .view-row span {
+    font-size: 14px;
+  }
+
+  .view-row p {
+    word-break: break-word;
+    font-size: 14px;
+  }
+
+  .close-view {
+    margin-top: 25px;
+  }
+
+  /* Department Management Section */
+
+  .department-form h3 {
+    margin-top: 0;
+  }
+
+  .department-form {
+    width: 100%;
+    align-items: center;
+  }
+
+  .department-form input,
+  .department-form textarea {
+    width: 90%;
+  }
+
+  .department-form textarea {
+    height: 60px;
+  }
+
+  .department-form button {
+    width: 60%;
+    max-width: 200px;
+  }
+
+  .department-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .department-list h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .department-list .search-wrapper {
+    width: auto;
+  }
+
+  .department-list .search-input {
+    width: 140px;
+    max-width: 160px;
+  }
+
+  .View-DepartmentCard {
+    width: 50%;
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 16px;
+    margin-top: 40px;
+    align-items: center;
+  }
+
 }
