@@ -259,7 +259,7 @@ const Home = () => {
 
       {/* DEPARTMENT MODULE */}
       {activeModule === 'department' && (
-        <div className="container">
+        <div className="dept-container">
           <div className="form-section">
             <DepartmentForm
               onAddDepartment={addDepartment}

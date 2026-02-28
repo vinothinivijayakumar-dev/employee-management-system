@@ -1,6 +1,8 @@
 html,
 body {
-  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -9,6 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f1f5f9;
+  overflow-x: hidden;
 }
 
 .page {
@@ -17,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .title-bar {
@@ -81,7 +85,6 @@ body {
   padding: 30px;
   background-color: #ccc;
   border-radius: 12px;
-  border: 1px solid gray;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
@@ -391,6 +394,7 @@ mark {
 .view-card {
   width: 40%;
   margin: 20px auto;
+  margin-top: 50px;
   padding: 10px;
   background: #ffffff;
   border-radius: 10px;
@@ -586,6 +590,7 @@ form button:focus,
 }
 
 /* Department Management section */
+
 .module-switch {
   display: flex;
   gap: 12px;
@@ -711,7 +716,7 @@ input:focus {
 .View-DepartmentCard {
   width: 50%;
   margin: 20px auto;
-  margin-top: 20px;
+  margin-top: 50px;
   padding: 10px;
   background: #ffffff;
   border-radius: 10px;
@@ -769,6 +774,17 @@ input:focus {
   padding: 2px 5px;
   border-radius: 4px;
   font-weight: 500;
+}
+
+.dept-container {
+  max-width: 95%;
+  padding: 0 10px;
+  width: 90%;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ccc;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
 /* TABLET RESPONSIVE (768px) */
@@ -1045,6 +1061,62 @@ input:focus {
     padding: 16px;
     margin-top: 40px;
     align-items: center;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .title-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    padding: 15px 10px;
+  }
+
+  .app-logo {
+    width: 60px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .main-title {
+    font-size: 25px;
+    margin: 0;
+  }
+
+  .container {
+    margin-left: 1px;
+    margin-right: 2px;
+  }
+
+  .view-card {
+    width: 60%;
+    max-width: 95%;
+  }
+
+  .list-header {
+    display: flex;
+    gap: 40px;
+  }
+
+  .employee-row {
+    padding: 15px;
+  }
+
+  .dept-container {
+    max-width: 90%;
+    padding: 0 10px;
+  }
+
+  .dept-form-divider {
+    width: 90%;
+    height: 1px;
+    border-bottom: 2px solid #d1d5db;
   }
 
 }
