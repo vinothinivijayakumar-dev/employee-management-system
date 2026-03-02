@@ -51,7 +51,7 @@ const EmployeeList = ({
       <div className="list-header">
         <span>Name</span>
         <span>Role</span>
-        <span>Experience</span>
+        <span>Year</span>
         <span>Action</span>
       </div>
 
