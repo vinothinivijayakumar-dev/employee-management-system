@@ -1293,6 +1293,13 @@ input:focus {
     display: none;
   }
 
+  .department-form h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+  }
+
   .dept-form-divider {
     width: 90%;
     height: 1px;
@@ -1318,12 +1325,12 @@ input:focus {
 
   .department-list .search-input {
     width: 100%;
-    margin-left: 50px;
+    margin-left: 40px;
   }
 
   .department-list .search-icon {
     position: absolute;
-    left: 60px;
+    left: 50px;
     top: 50%;
     transform: translateY(-50%);
     color: #000;
